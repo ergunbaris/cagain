@@ -5,10 +5,14 @@ int main(){
     int * p = &x;
     int * z = &x;
     int * y = p;
-    printf("p points to %p\n",p);
-    printf("z points to %p\n",z);
-    printf("y points to %p\n",y);
-    printf("x address is to %p\n",&x);
+    printf("p points to value stored at address%p\n",p);
+    printf("z points to value stored at address%p\n",z);
+    printf("y points to value stored at address%p\n",y);
+    printf("x values address is %p\n",&x);
     *p = 9;
     printf("%d\n",x);
+    
+    printf("p pointer is hold in the address:  %p\n",&p);
+    printf("z pointer is hold in the address:  %p\n",&z);
+    printf("y pointer is hold in the address:  %p\n",&y);
 }
