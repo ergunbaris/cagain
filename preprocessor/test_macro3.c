@@ -7,7 +7,8 @@ int main()
   int i = 0;
   for (i = 0; i < 5; i++)
     {
-    printf("%d\n",MACRO2(i));
+    int x = MACRO2(i);
+    printf("%d\n",x);
     }
   return 0;
   }
